@@ -29,7 +29,7 @@ entry.pack(pady=20)
 add_button = tk.Button(root, text="Add Task", command=add_task, bg="#59CE8F", fg="black") 
 add_button.pack(pady=5)
 
-delete_button = tk.Button(root, text="Delete Task", command=delete_task, bg="#59CE8F", fg="black")  # Set background and text color for the "Delete Task" button
+delete_button = tk.Button(root, text="Delete Task", command=delete_task, bg="#59CE8F", fg="black")  
 delete_button.pack(pady=5)
 
 listbox = tk.Listbox(root, selectmode=tk.SINGLE, width=40, height=10, bg="white", fg="black")  # Set background and text color for the listbox
