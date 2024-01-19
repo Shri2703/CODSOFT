@@ -32,7 +32,6 @@ add_button.pack(pady=5)
 delete_button = tk.Button(root, text="Delete Task", command=delete_task, bg="#59CE8F", fg="black")  
 delete_button.pack(pady=5)
 
-listbox = tk.Listbox(root, selectmode=tk.SINGLE, width=40, height=10, bg="white", fg="black") 
 listbox.pack(pady=10)
 
 root.mainloop()
