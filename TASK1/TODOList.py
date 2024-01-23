@@ -25,7 +25,6 @@ root.configure(bg="black")
 entry = tk.Entry(root, width=40, bg="white", fg="black") 
 entry.pack(pady=20)
 
-
 add_button = tk.Button(root, text="Add Task", command=add_task, bg="#59CE8F", fg="black") 
 add_button.pack(pady=5)
 
