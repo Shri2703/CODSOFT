@@ -24,5 +24,4 @@ def PasswordGenerator():
     print(f"Generated Password: {password}")
 
 
-
 PasswordGenerator()    
