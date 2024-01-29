@@ -9,19 +9,25 @@ def GeneratePassword(length):
 def PasswordGenerator():
     print("------------Password Generator----------------")
 
-    #usinf error handling
-    try:
-        length = int(input("Enter the length of the password: "))
-        if length <= 0:
-            print("Please Enter a positive length")
-            return
+    while True:
+        # Using error handling
+        try:
+            length = int(input("Enter the length of the password (or enter 'stop' to exit): "))
 
-    except ValueError:
-        print("Invalit input.Pleae enter a valid number")
-        return
+            if length <= 0:
+                print("Please enter a positive length.")
+                continue  # Go back to the beginning of the loop
 
-    password = GeneratePassword(length)  
-    print(f"Generated Password: {password}")
+        except ValueError:
+            input_value = input("Invalid input. Enter a valid number or 'stop' to exit: ")
+            if input_value.lower() == 'stop':
+                print("Password Generator stopped.")
+                break  # Exit the loop and end the program
+            else:
+                continue  # Go back to the beginning of the loop if not 'stop'
 
+        password = GeneratePassword(length)
+        print(f"Generated Password: {password}")
 
-PasswordGenerator()    
+# Run the password generator
+PasswordGenerator()
