@@ -30,10 +30,3 @@ def Calculator():
 
         if operation in operations:
             result = operations[operation](num1, num2)
-            print(f"Result: {result}")
-        else:
-            print("Invalid operation. Please choose a valid operation (+, -, *, /).")
-
-
-# Run the calculator
-Calculator()
